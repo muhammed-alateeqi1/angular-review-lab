@@ -7,3 +7,33 @@
 <h1 [class.text-center]="isAdmin">Muhammed Al-Ateeqi</h1>
 <h1 [class]="isAdmin ? 'text-black bg-red-400' : 'text-white bg-black text-center'   "> Muhammed : {{input }} </h1>
 <button (click)="changeStyle()" class="border rounded p-2 bg-sky-300 mt-5">change style</button>
+
+
+
+<p class="text-center bg-black text-white" [style.color]="color">Style Binding</p>
+<!-- receive values from ts to html-->
+<button class="border p-2" (click)="btn1() ">red</button>
+<button class="border p-2" (click)="btn2()">yellow</button>
+
+<!-- style binding example (usecase) -->
+ <!-- i can change section bg color using color ballet -->
+
+<!-- i will make color ballet in small container -->
+
+<p class="text-center bg-black text-white text-xl test" [style.color]="color">Style Binding UseCase </p>
+
+<div class="color-ballet-container">
+   <span (click)="resColorFun('orange')" class="color-box bg-amber-500"></span>
+   <span (click)="resColorFun('red')" class="color-box bg-red-600"></span>
+   <span (click)="resColorFun('white')" class="color-box bg-amber-50"></span>
+   <span (click)="resColorFun('lightblue')" class="color-box bg-sky-400"></span>
+   <span (click)="resColorFun('lightgreen')" class="color-box bg-green-400"></span>
+   <span (click)="resColorFun('yellow')" class="color-box bg-amber-300"></span>
+   <span (click)="resColorFun('gray')" class="color-box bg-gray-400"></span>
+   <span (click)="resColorFun('aliceblue')" class="color-box bg-neutral-300"></span>
+</div>
+
+<section [style.background-color]="selectedColor" class="colored-section border">
+    
+</section>
+

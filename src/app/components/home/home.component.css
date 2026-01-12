@@ -1,0 +1,33 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+.color-ballet-container{
+    width: fit-content;
+    /* height: 300px; */
+    background-color: rgb(62, 40, 40);
+    overflow: hidden;
+    padding: 2px;
+    display: flex;
+    margin: auto;
+}
+.color-box{
+ width: 10px;
+ height: 10px;
+ display: block;
+ margin:0px 1px ;
+}
+.color-box:hover{
+opacity: .8;
+}
+
+.colored-section{
+    width: 100%;
+    height: 400px;
+    margin-top: 5px;
+    background-color: burlywood;
+}
+.test{
+    margin-bottom: 5px;
+    color: aliceblue;
+}

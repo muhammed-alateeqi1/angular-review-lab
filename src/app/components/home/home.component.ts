@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { NgClass, NgStyle } from '@angular/common';
+import { Component} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, NgClass, NgStyle],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -24,13 +25,29 @@ export class HomeComponent {
   arrMix: [string, number] = ['', 2,];
   // union
   demo:string | number | boolean | object | null =  null ;
-  
+  color !:string;
+  selectedColor!:string;
   print(x:Event){
     console.log(x.target);
   }
 
 changeStyle(){
   this.isAdmin = false;
+}
+btn1(){
+    this.color = 'red';
+    console.log(this.color);
+
+  }
+btn2(){
+    this.color = 'yellow';
+    console.log(this.color);
+}
+
+resColorFun(x:string){
+  this.selectedColor = x;
+  console.log('x', this.selectedColor);
+  
 }
   
 }
