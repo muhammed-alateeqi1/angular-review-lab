@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+[x: string]: any;
   constructor() {
     
   }
@@ -28,5 +29,8 @@ export class HomeComponent {
     console.log(x.target);
   }
 
+changeStyle(){
+  this.isAdmin = false;
+}
   
 }

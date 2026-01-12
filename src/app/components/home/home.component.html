@@ -4,3 +4,6 @@
 <input (keyup)="print($event)" type="text" [(ngModel)]="input" class="bg-amber-600">
 
 
+<h1 [class.text-center]="isAdmin">Muhammed Al-Ateeqi</h1>
+<h1 [class]="isAdmin ? 'text-black bg-red-400' : 'text-white bg-black text-center'   "> Muhammed : {{input }} </h1>
+<button (click)="changeStyle()" class="border rounded p-2 bg-sky-300 mt-5">change style</button>
